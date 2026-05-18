@@ -6,7 +6,7 @@
 
 <style>
 .back {
-  background: url("sample.jpg");
+  background: url("./sample.jpg");
   padding: 50px;
 }
 .front {
