@@ -9,9 +9,11 @@
 <div class="back">
   <div class="header">
     ヘッダー
-    <div class="menu">メニュー</div>
+    <div class="menu pc">メニュー</div>
   </div>
+  <div class="menu sp">メニュー</div>
 </div>
+
 
 <style>
 .back {
@@ -24,16 +26,24 @@
   box-shadow: 0 0 8px #00000024;
   padding: 32px;
   background: #FFFFFF56;
-  transform: rotate(5deg);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 }
 .menu {
   color: white;
   background: blue;
   width: 100%;
   padding: 10px;
+  box-sizing: border-box;
   position: fixed;
   left: 0;
   bottom: 0;
+}
+.pc {
+  display: none;
+}
+.sp {
+  display: block;
 }
 </style>
 </body>
